@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
 	<string name="app_name">GNOME.ASIA</string>
 	<string name="main_news" translatable="false">情報</string>
-	<string name="main_envent" translatable="false">活動</string>
+	<string name="main_event" translatable="false">活動</string>
 	<string name="main_gnome" translatable="false">GNOME.Asia</string>
 	<string name="main_more" translatable="false">多い</string>
 
+	<string name="toolbar_news" translatable="false">LinuxStory</string>
+	<string name="toolbar_event" translatable="false">活動通知</string>
+	<string name="toolbar_more" translatable="false">More</string>
 </resources>

@@ -2,21 +2,17 @@ package com.gnomeasia.base;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.TextView;
-
-
-import com.gnomeasia.R;
 
 import butterknife.ButterKnife;
+import me.yokeyword.fragmentation.SupportActivity;
 
 /**
  * ================================================
@@ -28,7 +24,7 @@ import butterknife.ButterKnife;
  * 修订历史：
  * ================================================
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends SupportActivity {
 
 
     public Context mContext;
@@ -88,4 +84,10 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
         return false;
     }
+
+
+    public void newInstance(Class classs) {
+        startActivity(new Intent(mContext, classs));
+    }
+
 }
